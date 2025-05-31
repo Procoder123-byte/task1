@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sounds Care</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f7f9fb;
+      color: #1c1c1c;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      position: relative;
+    }
+
+    nav a:hover::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 2px;
+      background: orange;
+      transition: 0.3s;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 10%;
+    }
+
+    .hero-text {
+      flex: 1;
+      animation: slideInLeft 1s ease-out;
+    }
+
+    .hero-text h1 {
+      font-size: 40px;
+      line-height: 1.3;
+      color: #1c1c1c;
+    }
+
+    .hero-text p {
+      margin: 20px 0;
+      color: #777;
+    }
+
+    .hero-text button {
+      background: #ff5f2e;
+      border: none;
+      padding: 15px 25px;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero-text button:hover {
+      background: #ff3f00;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: center;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .hero-image img {
+      max-width: 80%;
+      border-radius: 20px;
+    }
+
+    .featured {
+      background: #1c1c1c;
+      color: #fff;
+      padding: 50px 10%;
+    }
+
+    .featured h2 {
+      margin-bottom: 30px;
+    }
+
+    .products {
+      display: flex;
+      gap: 30px;
+    }
+
+    .product {
+      background: #2d2d2d;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-10px);
+    }
+
+    .product img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+
+    .product p {
+      color: #ff5f2e;
+    }
+
+    .product a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background: #ff5f2e;
+      color: white;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .product a:hover {
+      background: #ff3f00;
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://img.icons8.com/emoji/48/headphone-emoji.png" width="30" /> Sounds Care
+    </div>
+    <nav>
+      <a href="#">Start</a>
+      <a href="#">Shop</a>
+      <a href="#">Products</a>
+      <a href="#">Hot Sale</a>
+    </nav>
+    <div>
+      🔍 <span style="margin-left: 10px;">🛒</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Music Is Well Said To Be The Speech Of Angels 🔥</h1>
+      <p>It is a long established fact that a reader will be distracted by the readable content when looking at its layout.</p>
+      <button>Add To Cart 🛒</button>
+    </div>
+    <div class="hero-image">
+      <img src="https://i.ibb.co/sRLZZRx/girl-headphone.png" alt="Girl with Headphones">
+    </div>
+  </section>
+
+  <section class="featured">
+    <h2>Featured Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://img.icons8.com/color/96/headphones.png" alt="Headphones">
+        <h3>A30 Headphone</h3>
+        <p>$58.00 <span style="text-decoration:line-through; color: #aaa;">$66.00</span></p>
+        <a href="#">SHOP NOW</a>
+      </div>
+      <div class="product">
+        <img src="https://img.icons8.com/color/96/headphones--v2.png" alt="Headphones">
+        <h3>A30 Headphone</h3>
+        <p>$58.00 <span style="text-decoration:line-through; color: #aaa;">$66.00</span></p>
+        <a href="#">SHOP NOW</a>
+      </div>
+      <div class="product">
+        <img src="https://img.icons8.com/color/96/headphones.png" alt="Headphones">
+        <h3>A30 Headphone</h3>
+        <p>$58.00 <span style="text-decoration:line-through; color: #aaa;">$66.00</span></p>
+        <a href="#">SHOP NOW</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
